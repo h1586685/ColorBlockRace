@@ -9,6 +9,7 @@ Description
 ---
 Identify different colors to defeat your opponents.
 + The website is powered by node.js.
++ The Front End remake by react
 
 Features
 ---
