@@ -9,12 +9,15 @@ Description
 ---
 Identify different colors to defeat your opponents.
 + The website is powered by node.js.
-+ The Front End remake by react
++ The Front End remake by react.
 
 Features
 ---
-+ Real-time updating of opponents state
++ Real-time updating of opponents state.
 + The server-side verifies the answers of color.
++ UI animation.
++ Decrease score every 3 incorrect click.
++ RWD
 
 Flow Chart
 ---
