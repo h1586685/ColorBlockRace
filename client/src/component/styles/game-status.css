@@ -1,0 +1,142 @@
+/* 遊戲資訊 */
+#game_status {
+  /*center the timer on top horizontal*/
+  font-size: 70px;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  width: 100%;
+}
+
+.round_status {
+  font-weight: bold;
+  font-size: 30px;
+}
+
+ /* 根據視窗大小文字大小 */
+@media (max-width: 1200px) {
+  #game_status{
+    font-size: 65px;
+  }
+  .round_status{
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  #game_status{
+    font-size: 60px;
+  }
+  .round_status{
+    font-size: 20px;
+  }
+}
+
+/* 使用者資訊 */
+.user_status_bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#user_name,
+#opponent_name{
+  text-align: center;
+  font-size: 35px;
+  color: #000;
+}
+#user_score,
+#opponent_score{
+  text-align: center;
+  font-size: 45px;
+  font-weight: bold;
+  color: #000;
+}
+
+.win_count_state{
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  color: #000;
+}
+
+#user_win_count_text,
+#opponent_win_count_text{
+  text-align: center;
+  font-size: 35px;
+  font-weight: bold;
+  color: #000;
+}
+
+#user_wrong_count_container{
+  display: grid;
+  grid-template-columns: repeat(3, 0.1fr);
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+#user_wrong_count_block,
+#user_wrong_count_minus_block{
+  height: 8px;
+  width: 70px;
+  border-radius: 10px;
+  background-color: rgb(215, 203, 203);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+#user_wrong_count_content {
+  visibility: hidden;
+}
+
+#opponent_wrong_count{
+  height: 28px;
+}
+
+ /* 根據視窗大小文字大小 */
+@media (max-width: 1200px) {
+  #user_score,
+  #opponent_score{
+    font-size: 40px;
+  }
+  #user_win_count_text,
+  #opponent_win_count_text{
+    font-size: 30px;
+  }
+  #user_name,
+  #opponent_name{
+    font-size: 32px;
+  }
+}
+@media (max-width: 650px) {
+  #user_score,
+  #opponent_score{
+    font-size: 46px;
+  }
+  #user_win_count_text,
+  #opponent_win_count_text{
+    font-size: 47px;
+  }
+  #user_name,
+  #opponent_name{
+    font-size: 35px;
+  }
+  #user_win_count_text{
+    color:rgb(78, 162, 235);
+  }
+}
+
+/* 視窗大小小於850px，隱藏對手 */
+@media(max-width:850px){
+  .opponent_side
+  {
+    display: none;
+  }
+}

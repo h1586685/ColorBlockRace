@@ -1,0 +1,451 @@
+/*遮罩*/
+#window-cover {
+	position: fixed;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	background-color: black;
+	opacity: 0.8;
+	z-index: 1;
+}
+
+/* 彈出視窗 */
+#pop_up_window {
+	position: absolute;
+	padding: 10px;
+	margin: auto;
+	width:fit-content;
+	height:fit-content;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	background-color: #666;
+	color: #FFF;
+	border-radius: 13px;
+	z-index: 1;
+}
+
+/* 自定義滑桿 */
+#pop_up_window ::-webkit-scrollbar {
+	width: 9px;
+	height: 9px;
+}
+#pop_up_window ::-webkit-scrollbar-track {
+	background: rgba(160, 160, 160, 0.5);
+	border-radius: 15px;
+}
+#pop_up_window ::-webkit-scrollbar-thumb {
+	background-color: rgba(175, 175, 175, 0.5);
+	border-radius: 15px;
+	border: transparent;
+}
+
+/* 登入視窗 */
+#login-panel{
+    text-align: center;
+	position: relative;
+}
+#game_title{
+    font-size: 50px;
+}
+.info-text-input {
+	color: #FFF;
+	background-color: #555;
+	word-break: break-all;
+	font-size: 18px;
+	font-weight: unset;
+	margin: 5px;
+	border: 2px solid #AAA;
+	border-radius: 5px;
+}
+#login_button {
+	display: inline-block;
+  	color:rgb(255, 255, 255);
+	background-color: rgb(182, 54, 54);
+	border: 0px;
+	font-size: 30px;
+	border-radius: 5px;
+  	font-family: 'Kdam Thmor Pro', 'sans-serif';
+}
+#ur_i {
+  	font-size: 200px;
+  	text-align: center;
+  	margin-top: -40px;
+}
+#guide_button {
+	font-size: 16px;
+	font-weight:bold;
+	position: absolute;
+	height: 32px;
+	width: 32px;
+	bottom: 6px;
+	right: 3px;
+	border: 0px;
+	border-radius: 5px;
+	color:rgb(255, 255, 255);
+	background-color: #84949d;
+	font-family: 'Kdam Thmor Pro', 'sans-serif';
+}
+
+@media (max-width: 650px) {
+	#game_title{
+		font-size: 42px;
+	}
+	#ur_i {
+		font-size: 170px;
+  	}
+}
+
+/* 訊息 */
+#message_box {
+    display: block;
+    color: #FFF;
+    word-break: break-all;
+    font-size: 18px;
+    font-weight: unset;
+    margin: 5px;
+    border-radius: 5px;
+    text-align: center;
+}
+#message_title {
+    font-size: 	35px;
+}
+#message_button{
+	color:rgb(255, 255, 255);
+	background-color: rgb(182, 54, 54);
+	border: 0px;
+	font-size: 20px;
+	border-radius: 5px;
+	font-family: 'Kdam Thmor Pro', 'sans-serif';
+	/* button center */
+	display: block;
+	margin: auto;
+	width: fit-content;
+	height: fit-content;
+}
+  
+/* 等待畫面 */
+#loading_text {
+    margin: 20px;
+    font-size: 25px;
+}
+
+@media (max-width: 650px) {
+	#loading_text {
+		font-size: 18px;
+	}
+}
+
+/* 倒數視窗 */
+#countdown-window-container {
+	z-index: 1;
+	display: flex;
+	flex-direction: column;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+#countdown-window-cover {
+	height: 30%;
+	width: 100%;
+	background-color: black;
+	opacity: 0.83;
+}
+
+#countdown-message-box {
+	height: 40%;
+	width: 100%;
+	background-color: rgb(255, 255, 255);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+#countdown-title {
+	font-size: 35px;
+	color: white;
+}
+
+#countdown-message {
+	color : rgb(0, 0, 0);
+	font-size: 110px;
+	font-weight:bold;
+}
+
+#countdown-slash{
+	position: fixed;
+	font-size: 320px;
+	display: flex;
+	justify-content: center;
+	height: 200px;
+	width: 15px;
+	background-color: rgb(114, 114, 114);
+}
+
+#countdown-sub-slash{
+	position: fixed;
+	font-size: 320px;
+	display: flex;
+	justify-content: center;
+	height: 200px;
+	width: 5px;
+	background-color: rgb(159, 159, 159);
+}
+
+@media (max-width: 850px) {
+	#countdown-message {
+		font-size: 90px;
+	}
+	#countdown-title {
+		font-size: 33px;
+	}
+}
+
+@media (max-width: 650px) {
+	#countdown-message {
+		font-size: 80px;
+	}
+	#countdown-slash{
+		width: 12.5px;
+		height: 180px;
+	}
+	
+	#countdown-sub-slash{
+		width: 4.2px;
+		height: 180px;
+	}
+}
+
+/* 結算畫面 */
+#result-window-container{
+	z-index: 1;
+	display: flex;
+	flex-direction: row;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+#result-window-cover {
+	height: 100%;
+	width: 25%;
+	background-color: black;
+	opacity: 0.83;
+}
+
+#result-message-box {
+	height: 100%;
+	width: 50%;
+	background-color: rgb(255, 255, 255);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+#result-title {
+	text-align: center;
+	font-size: 35px;
+	color: rgb(255, 255, 255);
+}
+
+#result-message-container {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	color : rgb(255, 255, 255);
+}
+
+#result-hyphen {
+	font-size: 75px;
+}
+
+#result-message {
+	font-size: 80px;
+	font-weight:bold;
+}
+
+#refresh-button {
+	content: url(../icon/refresh.png);
+	width:64px;
+	height: 64px;
+}
+
+@media (max-width: 1160px) {
+	#result-window-cover {
+		width: 20%;
+	}
+	#result-message-box {
+		width: 60%;
+	}
+	#result-title {
+		font-size: 30px;
+	}
+	#result-message {
+		font-size: 70px;
+	}
+	#result-hyphen {
+		font-size: 75px;
+	}
+}
+
+@media (max-width: 1000px) {
+	#result-window-cover {
+		width: 15%;
+	}
+	#result-message-box {
+		width: 70%;
+	}
+	#result-message {
+		font-size: 60px;
+	}
+	#result-hyphen {
+		font-size: 65px;
+	}
+	#refresh-button {
+		width: 56px;
+		height: 56px;
+	}
+}
+
+@media (max-width: 850px) {
+	#result-window-cover {
+		width: 12%;
+	}
+	#result-message-box {
+		width: 76%;
+	}
+	#result-title {
+		font-size: 25px;
+	}
+	#result-message {
+		font-size: 50px;
+	}
+	#result-hyphen {
+		font-size: 55px;
+	}
+	#refresh-button {
+		width: 54px;
+		height: 54px;
+	}
+}
+
+@media (max-width: 650px) {
+	#result-title {
+		font-size: 19px;
+	}
+	#result-message {
+		font-size: 38px;
+	}
+	#result-hyphen {
+		font-size: 35px;
+	}
+	#refresh-button {
+		width: 50px;
+		height: 50px;
+	}
+}
+
+/* 引導視窗 */
+#step_container {
+    display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.step_container {
+	background-color: rgb(86, 87, 89);
+	border-radius: 10px;	
+	padding: 10px;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+.step_gap{
+	width:10px;
+	height:10px;
+}
+
+#guide_subtitle{
+	font-size: 25px;
+}
+
+#step_1_guide_img{
+	width: 250px;
+	height: 250px; 
+	-webkit-user-drag: none;
+}
+
+#step_2_guide_img{
+	width: 250px;
+	padding-top: 62px;
+	padding-bottom: 62px;
+	-webkit-user-drag: none;
+}
+
+#tip_img{
+	height: 250px;
+	width: 250px;
+	height: auto;
+	padding-top: 68px;
+	padding-bottom: 68px;
+	-webkit-user-drag: none;
+}
+
+@media (max-width:910px){
+	#step_container {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		width: 360px;
+	}
+	#guide_container #message_box{
+		/* 滑條 */
+		overflow: auto;
+		scroll-behavior: smooth;
+		height: 550px;
+	}
+	#guide_container #message_box:hover::-webkit-scrollbar-thumb {
+		background: rgb(184, 184, 184);
+	}
+	#guide_container #message_button{
+		margin-bottom: 5px;
+	}
+	.step_gap{
+		height: 10px;
+	}
+	#step_1_guide_img{
+		width: 150px;
+		height: auto;
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+	#step_2_text{
+		font-size: 20px;
+	}
+	#step_2_guide_img{
+		width: 150px;
+		height: auto;
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+	#tip_img{
+		width: 180px;
+		height: auto;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		padding-left: 56px;
+		padding-right: 56px;
+	}
+}

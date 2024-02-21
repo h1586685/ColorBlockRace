@@ -1,0 +1,4 @@
+runtime: nodejs16
+
+env_variables:
+  NPM_CONFIG_NPM_VERSION: '9.6.2'  
